@@ -18,7 +18,7 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 # install and cache app dependencies
 RUN yarn
 
-# Expose PORT 2000 on our virtual machine so we can run our server
+# Expose PORT 3000 on our virtual machine so we can run our server
 EXPOSE 3000
 
 # start app
