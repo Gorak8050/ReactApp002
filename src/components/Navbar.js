@@ -14,17 +14,27 @@ function Navbar() {
         <>
         <IconContext.Provider value={{ color:'#fff' }} >
             <div className="navbar">
-                <Link to="#" className='menu-bars'>
+
+                <Link to="#" className='menu-bars hidden-lg'>
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
+
+                <img className='logo-container' src={require('../images/logo1.png')} alt="Logo" />
+
+                    {SidebarData.map((item,index) => {
+                        return(
+                            <li key={index} className={`${item.cName}`+' hidden-xs'} >
+                                <Link to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+
             </div>
             <nav className={ sidebar ? 'nav-menu active' : 'nav-menu' } >
                 <ul className='nav-menu-items'  onClick={showSidebar} >
-                    <li className='navbar-toggle'>
-                        <Link to="#" className='menu-bars'>
-                            <AiIcons.AiOutlineClose  />
-                        </Link>
-                    </li>
                     {SidebarData.map((item,index) => {
                         return(
                             <li key={index} className={item.cName}>

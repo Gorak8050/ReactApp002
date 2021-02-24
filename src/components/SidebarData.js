@@ -23,6 +23,12 @@ export const SidebarData = [
     icon:<FaIcons.FaCartPlus/>,
     cName:'nav-text'
 },
+// {
+//     title:'ProductDetails',
+//     path:'/productdetails',
+//     icon:<FaIcons.FaCartPlus/>,
+//     cName:'nav-text'
+// },
 {
     title:'Team',
     path:'/team',

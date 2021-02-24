@@ -4,6 +4,7 @@
     display:flex;
     justify-content: start;
     align-items: center;
+    border-radius:2px;
 }
 
 .menu-bars{
@@ -17,9 +18,10 @@
     width:250px;
     height:100vh;
     display:flex;
+    z-index: 2;
     justify-content: center;
     position: fixed;
-    top: 0;
+    top: 80px;
     left: -100%;
     transition: 850ms;
 }
@@ -71,3 +73,8 @@ span {
     margin-left: 16px;
 }
 
+.logo-container{
+    height: 60px;
+    width: 100px;
+    padding: 2px;
+}
