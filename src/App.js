@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import Report from './pages/Report'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 class App extends Component {
   render() {
