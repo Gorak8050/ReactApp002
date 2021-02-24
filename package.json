@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.4.1",
     "react": "^16.7.0",
-    "react-bootstrap": "^1.4.3",
     "react-dom": "^16.7.0",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
